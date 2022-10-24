@@ -1,9 +1,4 @@
-#include "simple.h"
-
-void sigPipeHandle(){
-    perror("Client abort connection");
-    exit(-1);
-}
+#include <simple.h>
 
 int simple(){
     int sock, client, port;

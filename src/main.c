@@ -1,6 +1,6 @@
-#include "client.h"
-#include "simple.h"
-#include "complexe.h"
+#include "../include/client.h"
+#include "../include/simple.h"
+#include "../include/complexe.h"
 
 int main(int argc, char **argv) {
     if(argc != 3 && argc != 2){

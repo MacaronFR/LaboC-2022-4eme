@@ -1,14 +1,14 @@
-#ifndef SOCKET_SIMPLE_H
-#define SOCKET_SIMPLE_H
+#ifndef SOCKET_COMPLEXE_H
+#define SOCKET_COMPLEXE_H
 
 #include <netinet/in.h>
 #include <stdio.h>
 #include <string.h>
 #include <unistd.h>
 #include <signal.h>
-#include <bits/signum-generic.h>
 #include <stdlib.h>
+#include <shared.h>
 
-int simple();
+int complexe();
 
-#endif //SOCKET_SIMPLE_H
+#endif //SOCKET_COMPLEXE_H

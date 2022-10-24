@@ -1,10 +1,4 @@
-#include <sys/socket.h>
-#include <stdio.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <string.h>
-#include <unistd.h>
-#include "client.h"
+#include <client.h>
 
 void client(){
     char buffer[256];

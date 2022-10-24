@@ -3,4 +3,6 @@ project(socket C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(socket main.c simple.c simple.h client.c complexe.c)
+include_directories(include)
+
+add_executable(socket src/main.c src/simple.c src/client.c src/complexe.c src/shared.c)

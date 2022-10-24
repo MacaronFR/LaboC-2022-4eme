@@ -1,17 +1,4 @@
-#include "complexe.h"
-
-void sigPipeHandle2(){
-    perror("Client abort connection");
-    exit(-1);
-}
-
-void sendAll(int *clients, int sender, int n, char *buffer, ssize_t size){
-    for(int i = 0; i < n; ++i){
-        if(clients[i] != sender) {
-            write(clients[i], buffer, size);
-        }
-    }
-}
+#include <complexe.h>
 
 int complexe(){
     int sock, port, max, actual = 0;
@@ -20,7 +7,7 @@ int complexe(){
     ssize_t n;
     char buffer[256];
     struct sockaddr_in srv_addr;
-    signal(SIGPIPE, sigPipeHandle2);
+    signal(SIGPIPE, sigPipeHandle);
     max = sock = socket(AF_INET, SOCK_STREAM, 0);
     if(sock < 0){
         perror("socket");
